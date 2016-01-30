@@ -1,11 +1,12 @@
 alert (window.location);
-$(document).ready(function(){
-$('h1').css('color', 'red');
-$('#ajax-form1').on('submit', function(){
-$.ajax(){
+jQuery(document).ready(function(){
+alert ('получилось!!!');
+jQuery('h1').css('color', 'red');
+jQuery('#ajax-form1').on('submit', function(){
+jQuery.ajax(){
 type: "POST",
 url: 'http://test.local/wordpress/wp-content/themes/twentyfifteen/function.php',
-data: $(this).serialize,
+data: jQuery(this).serialize,
 success: function(){
 alert ('получилось!!!');}
 }
