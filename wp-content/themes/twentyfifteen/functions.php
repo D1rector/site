@@ -364,12 +364,12 @@ if (isset($_POST["name"])) {
 		echo "Yourdata: $name , $time , $event , $place";
 }
 /*Добавляем jQuery*/
-add_action( 'wp_enqueue_scripts', 'add_Jquery' );
+//add_action( 'wp_enqueue_scripts', 'add_Jquery' );
 //add_action( 'admin_enqueue_scripts', 'my_scripts_method' );
 //add_action( 'login_enqueue_scripts', 'my_scripts_method' );
-function add_Jquery(){
-	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-1.12.0.min.js');
-}
+//function add_Jquery(){
+	//wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-1.12.0.min.js');
+//}
 
 add_action('wp_ajax_form', 'my_action_callback');
 add_action('wp_ajax_nopriv_form', 'my_action_callback');
